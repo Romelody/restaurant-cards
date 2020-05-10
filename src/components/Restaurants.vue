@@ -4,6 +4,7 @@
     <Restaurant
       v-for="restaurant in asian_restaurants"
       :name=restaurant.name
+      :rating="restaurant.rating"
       :key="restaurant.id" />
   </div>
 </template>

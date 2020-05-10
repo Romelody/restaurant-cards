@@ -1,7 +1,7 @@
 <template>
     <div id="restaurant" >
         <div class="restaurant" >
-            {{name}}
+            {{name}} {{rating}}
         </div>
     </div>
 </template>
@@ -10,7 +10,8 @@
 export default {
   name: 'Restaurant',
   props: {
-    name: String
+    name: String,
+    rating: Number
   }
 }
 </script>
