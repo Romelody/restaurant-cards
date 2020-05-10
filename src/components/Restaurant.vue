@@ -1,7 +1,9 @@
 <template>
     <div id="restaurant" >
         <div class="restaurant" >
-            {{name}}
+          <h3>{{name}}</h3>
+          <p>{{type}}</p>
+          <p>⋆ {{rating}}</p>
         </div>
     </div>
 </template>
@@ -10,23 +12,22 @@
 export default {
   name: 'Restaurant',
   props: {
-    name: String
+    name: String,
+    type: String,
+    rating: Number
   }
 }
 </script>
 
 <style>
- #restaurant{
-    display: flex;
-    flex-direction: row;
- }
 
-.restaurant{
-    width: 33%;
-    height: 300px;
-    background: powderblue;
+#restaurant{
+    background: #FFB74D;
     border-radius: 30px;
-
+    width: 100%;
+    margin: 10px;
+    padding: 30px;
+    color: #E64A19;
 }
 
 </style>
